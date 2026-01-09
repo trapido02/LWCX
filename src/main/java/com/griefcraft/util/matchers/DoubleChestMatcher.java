@@ -46,8 +46,20 @@ public class DoubleChestMatcher implements ProtectionFinder.Matcher {
     /**
      * Blocks that act like double chests
      */
-    public static final Set<Material> PROTECTABLES_CHESTS = EnumSet.of(Material.CHEST, Material.TRAPPED_CHEST);
+    public static final Set<Material> PROTECTABLES_CHESTS = EnumSet.of(
+            Material.CHEST,
+            Material.TRAPPED_CHEST,
+            Material.COPPER_CHEST,
 
+            // Copper chest variants
+            Material.EXPOSED_COPPER_CHEST,
+            Material.WEATHERED_COPPER_CHEST,
+            Material.OXIDIZED_COPPER_CHEST,
+            Material.WAXED_COPPER_GRATE,
+            Material.WAXED_EXPOSED_COPPER_CHEST,
+            Material.WAXED_WEATHERED_COPPER_CHEST,
+            Material.WAXED_OXIDIZED_COPPER_CHEST
+    );
     /**
      * Possible faces around the base block that protections could be at
      */
